@@ -1,0 +1,25 @@
+.input {
+    height: 65px;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+    background: #FCFCFD;
+    border: 1px solid #EFEFEF;
+    box-shadow: 15px 20px 45p 0px rgba(233, 233, 233, 0.25);
+    border-radius: 10px;
+    padding: 16px 30px 16px 44px;
+    box-sizing: border-box;
+    min-width: 256px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+}
