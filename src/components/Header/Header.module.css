@@ -1,0 +1,108 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #161b22;
+  box-shadow: 
+    0 0 10px rgba(72, 187, 255, 0.1),
+    0 0 20px rgba(72, 187, 255, 0.05);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 100;
+  color: #FFFFFF;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap: 5px;
+  /* text-shadow: 0 0 3px #48bbff, 0 0 8px rgba(72, 187, 255, 0.6), 0 0 12px rgba(72, 187, 255, 0.4), 0 0 20px rgba(0, 212, 255, 0.2); */
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 30px;
+  height: 3px;
+  /* background: #48bbff; */
+  background: #ffffff;
+  box-shadow: 0 0 3px #48bbff, 0 0 8px rgba(72, 187, 255, 0.6), 0 0 12px rgba(72, 187, 255, 0.4), 0 0 20px rgba(0, 212, 255, 0.2);
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu {
+  position: fixed;
+  box-sizing: border-box;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  background: #161b22;
+  padding: 20px;
+  box-shadow: 
+    0 0 15px rgba(72, 187, 255, 0.1),
+    0 0 25px rgba(72, 187, 255, 0.05);
+  transition: top 0.3s ease-in-out;
+}
+
+.menu.active {
+  top: 64px;
+      box-shadow: 0 0 15px rgba(72, 187, 255, 1), 0 0 30px rgba(72, 187, 255, 0.8), 0 0 45px rgba(72, 187, 255, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 10px 0;
+}
+
+.menu ul li a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: #48bbff;
+}
+
+.burger.active div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.headerLine {
+    z-index: 100;
+    background: #161b22;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 20px;
+    box-shadow: 
+    0 0 10px rgba(72, 187, 255, 0.1),
+    0 0 20px rgba(72, 187, 255, 0.05);
+}
