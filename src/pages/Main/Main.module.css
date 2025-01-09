@@ -39,6 +39,7 @@
     margin-bottom: 70px;
     margin-top: 70px;
     color: white;
+    text-align: center;
     transition: 0.3s;
     /* text-shadow: 
         0 0 3px #48bbff,
@@ -230,7 +231,7 @@
 
 @media (max-width: 768px) {
     .h1 {
-        font-size: 28px;
+        font-size: 24px;
         text-align: center;
         margin: 40px 0;
     }

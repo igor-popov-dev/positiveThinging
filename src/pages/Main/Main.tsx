@@ -98,21 +98,21 @@ export const Main = () => {
 	const currentPhrase =  phrases[phraseIndex] ? `${phrases[phraseIndex]}` : 'тут будет описан вопрос';
 	const currentTitle = currentQuestions?.[questionIndex] ?? 'Вопрос';
 
-	// const yes = () => {
-	// 	setQuestionIndex( value => {
-	// 		value++;
-	// 		if (value === currentQuestions?.length) {
-	// 			handleClick();
-	// 			return 0;
-	// 		}
-	// 		return value;
-	// 	});
-	// };
+	const yes = () => {
+		setQuestionIndex( value => {
+			value++;
+			if (value === currentQuestions?.length) {
+				handleClick();
+				return 0;
+			}
+			return value;
+		});
+	};
 
-	// const no = () => {
-	// 	handleClick();
-	// 	setQuestionIndex(0);
-	// };
+	const no = () => {
+		handleClick();
+		setQuestionIndex(0);
+	};
 
 	const toggleRundomize = () => {
 		setIsRandomizeList(value => !value);
@@ -173,9 +173,9 @@ export const Main = () => {
 				<p className={styles.defenition}>{feelingsItems[feelingIndex].description}</p>
 				{/* <Button appearence="big" onClick={handleClick}>Следущий</Button> */}
 				<div className={styles.buttons}>
-					{/* <Button appearence="big" onClick={yes}>Да (Что это было?)</Button> */}
-					{/* <Button appearence="big" onClick={no}>Нет</Button> */}
-					<Button appearence="big" onClick={handleClick}>Следущий вопрос</Button>
+					<Button appearence="big" onClick={yes}>Да (Что это было?)</Button>
+					<Button appearence="big" onClick={no}>Нет</Button>
+					{/* <Button appearence="big" onClick={handleClick}>Следущий вопрос</Button> */}
 				</div>
 			</>}
 			{/* {!isListDone && <div className="footer" style={{marginTop: 'auto', padding: '20px'}}>
