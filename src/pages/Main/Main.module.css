@@ -103,6 +103,9 @@
 .text {
     color: white;
     margin: 20px 0;
+    max-width: 800px;
+    width: 100%;
+    font-size: 16px;
 }
 
 .input[type="number"] {
@@ -311,3 +314,54 @@
     gap: 20px;
 }
 
+.shuffle-button {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 25px;
+  background: #161b22;
+  color: #a0aec0;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 
+    0 0 5px rgba(0, 0, 0, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 10px;
+}
+
+.shuffle-button.active {
+  background: #48bbff;
+  color: #0d1117;
+  box-shadow: 
+    0 0 10px rgba(72, 187, 255, 0.8),
+    0 0 20px rgba(72, 187, 255, 0.6),
+    0 0 30px rgba(72, 187, 255, 0.4),
+    inset 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.shuffle-button:hover {
+  box-shadow: 
+    0 0 8px rgba(72, 187, 255, 0.5),
+    0 0 15px rgba(72, 187, 255, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+.shuffle-button.active:hover {
+  box-shadow: 
+    0 0 15px rgba(72, 187, 255, 1),
+    0 0 25px rgba(72, 187, 255, 0.8),
+    0 0 35px rgba(72, 187, 255, 0.6),
+    inset 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.theme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
