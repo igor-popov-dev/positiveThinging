@@ -1,6 +1,5 @@
 import cn from 'classnames';
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Button from '../../components/Button/Button';
 import { feelingsItems3 as feelingsItems } from '../../data/feelings';
 import { psyhologyList as lists } from '../../data/lists/psyhologyList';
@@ -10,7 +9,7 @@ import styles from './Main.module.css';
 
 export const Main = () => {
 	const randomize = (smth: unknown[]) => Math.floor(Math.random() * smth.length);
-	const navigate = useNavigate();
+	// const navigate = useNavigate();
 	const [phrases, setPhrases] = useState<string[]>([]);
 	const [feelings, setFeelings] = useState<string[]>([]);
 	const [currentListId, setCurrentListId] = useState<number>(1);
