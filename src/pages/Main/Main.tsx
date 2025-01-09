@@ -20,7 +20,7 @@ export const Main = () => {
 	const [feelingIndex, setFeelingIndex] = useState<number>(randomize(feelings));
 	const [isListDone, setIsListDone] = useState<boolean>(false);
 	const [isActiveFeeling, setIsActiveFeeling] = useState<boolean>(true);
-	const [isRandomizeList, setIsRandomizeList] = useState<boolean>(false);
+	const [isRandomizeList, setIsRandomizeList] = useState<boolean>(true);
 	
 	const goToStartList = () => {
 		setPhraseIndex(0);
