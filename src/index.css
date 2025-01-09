@@ -10,6 +10,12 @@
     --input-text-color: #C4C4C4;
 }
 
+html, body {
+  touch-action: manipulation;
+  -ms-touch-action: manipulation; 
+  overscroll-behavior: none;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     margin: 0;

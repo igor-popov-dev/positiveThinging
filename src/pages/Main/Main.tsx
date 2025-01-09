@@ -9,6 +9,7 @@ import styles from './Main.module.css';
 
 
 export const Main = () => {
+
 	const randomize = (smth: unknown[]) => Math.floor(Math.random() * smth.length);
 	// const navigate = useNavigate();
 	const [phrases, setPhrases] = useState<string[]>([]);
